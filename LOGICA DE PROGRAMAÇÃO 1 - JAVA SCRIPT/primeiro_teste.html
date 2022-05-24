@@ -1,0 +1,723 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    var ingredientes = [];
+
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+    var contador = 1;
+
+    while( contador <= quantidade) {
+
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+
+        var existe = false;
+
+        for(var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+        	if(ingredientes[posicao] == ingrediente) {
+
+        		existe = true;
+        		break;
+        	}
+        }
+
+        if(existe == false) {
+        	ingredientes.push(ingrediente);
+
+        contador++;
+        }
+       
+    }
+
+    console.log(ingredientes);
+</script>
+
+
+
+<!--
+<meta charset="UTF-8">
+
+<script >
+var letras = ["A", "B", "C", "D"];
+
+for( var i = 0; i < letras.length; i++ ) {
+    alert(letras[i]);
+}
+</script>
+
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<input/>
+<button>Clique-me</button>
+
+<script>
+
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+    var totalGastoComEventos = 0;
+    while(contador <= totalDeEventos) {
+
+        
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+
+        mostra(anoCopa + " tem copa!");
+        anoCopa = anoCopa + 4;
+    }
+
+    
+
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while( contador >= 0) {
+
+      mostra(contador);
+      contador = contador - 1;
+    }
+
+    mostra("FIM");
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 30;
+
+    while(contador <= 40) {
+
+        if( contador == 33 ) {
+        contador = contador + 1;
+        }
+        else if(contador == 37) {    
+            contador = contador + 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador + 1; 
+        }
+      }
+
+    mostra("FIM");
+
+
+</script>
+-->
+
+
+<!--
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 2;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+    mostra("FIM");
+</script>
+-->
+
+<!--<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+	    
+
+    if( idade >= 18 ) {
+        if( temCarteira == "S") {
+            mostra("Pode dirigir");
+        }else {
+        	mostra("Não pode dirigir")
+        }
+    }
+
+    if(idade < 18) {
+        mostra("Não pode dirigir");
+    }
+
+</script>
+
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"));
+    var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"));
+
+    quantidadeCarbono2 = quantidadeCarbono2 + 2;
+
+    if(quantidadeCarbono1 == quantidadeCarbono2 ) {
+
+        mostra("Acho que são substâncias parecidas");
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
+
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+var a = parseInt("10");
+var b = parseInt("Calopsita");
+var c = parseInt(10);
+var soma(a + b+ c)
+
+mostra(a + b + c)
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt("Número de convidados");
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>
+-->
+
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+
+</script>
+
+-->
+
+<!-- Exercicio
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra(resultado);
+</script>
+
+-->
+
+
+
+<!-- Exercicio
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha()
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48));
+
+    var imcCalculado = calculaImc(1.63, 48);
+  	
+    mostra("O meu IMC é " + imcCalculado);
+</script>
+-->
+
+<!-- Aplicação do Return
+<meta charset="utf-8">
+	
+	
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / Math.round((altura * altura));
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+
+    mostra("O meu IMC é : " + imcCalculado);
+
+</script>
+
+-->
+
+
+
+<!-- exercicio
+<meta charset="UTF-8">
+
+<script>
+
+	function mostra(texto) {
+		document.write(texto);
+		document.write("<br><br>");
+	}
+
+	var idadeNascimento = 28
+	var anos = 2022 - 1500
+	var geracoes = anos/28
+
+	mostra("De 1500 até hoje se passaram " + anos + " anos.")
+	mostra("Gerações desde a descoberta são de " + Math.round(geracoes) + " gerações." )
+
+</script>	
+-->
+
+<!-- Resultado mais o meu esta melhor 
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2016; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(quantidadeDeGeracoes);
+    </script>
+ -->
+
+<!--
+<meta charset="UTF-8">
+<script>
+
+	function frase(texto) {
+		document.write(texto)
+	}
+
+	var idade1 = 20
+	var idade2 = 10
+	var diferencaIdade = idade1-idade2
+
+	frase("Nossa diferença de idade é " + diferencaIdade )
+
+</script>	
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+
+	function exibirAlerta(mensagem) {
+		alert("***" + mensagem + "***")
+	}
+
+    var idade1 = 10;
+    var idade2 = 20;
+    var idade3 = 30;
+    var totalIdades = idade1 + idade2 + idade3;
+    var mediaIdades = totalIdades/3;
+    exibirAlerta("***Total de idades é " + totalIdades + "***");
+    exibirAlerta("***A média das idades é " +  mediaIdades + "***");
+</script>
+-->
+
+
+<!--exercicio
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    document.write("<h1>" + titulo + "</h1>");
+
+    pulaLinha();
+    
+    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    pulaLinha();
+    
+    document.write("Contudo, assistindo os vídeos e estudando ...");
+
+    pulaLinha();
+   
+    document.write("Eu vou mais longe!");
+
+    pulaLinha();
+    
+</script>
+-->
+
+
+<!-- exercicio
+<meta charset="UTF-8">
+<script>
+    function fazPegadinha(texto) {
+    	document.write(texto)
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+
+
+    fazPegadinha("Pegadinha!")
+
+</script>
+
+-->
+
+<!--
+<script>
+    function pulaLinha() {
+
+    	document.write("<br>");
+    	document.write("<br>");
+        }
+
+    function mostra(frase ){
+
+    	document.write(frase);
+    	pulaLinha()
+        }
+
+    mostra("Olá pessoal!");
+
+    var ano = 2016;
+
+    mostra("Flávio tem " + (ano - 1977) + " anos");
+
+    
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+    ano = 2017;
+
+    mostra("Barney tem " + (ano - 1976) + " anos");
+
+</script>
+-->
+
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+    function x() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+var ano = 2016;
+
+document.write("Flávio tem " + (ano - 1977) + " anos");
+
+x();
+
+document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+x();
+
+ano = 2017;
+
+document.write("Barney tem " + (ano - 1976) + " anos");
+
+</script>
+-->
+
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+    var ano = 2016;
+    var puloLinha = "<br><br><br><br><br><br><br>";
+
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write(puloLinha);
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write(puloLinha);
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+
+</script>
+
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+</script>
+-->
+
+
+
+<!--
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado: " + Math.round(10/3));
+</script>
+
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+
+	var linda = 12
+	var guaraciara = 15
+	var perola = 13
+	var soma = 12 + 15  + 13
+
+    document.write( Math.round(soma / 3));
+
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+<script>
+
+	var linda = 12
+	var guaraciara = 15
+	var perola = 13
+
+    document.write( Math.round((linda + guaraciara + perola) / 3));
+
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+        document.write("A média das idades é " + Math.round(media));
+
+        var nome = "Flávio";
+
+        document.write("<br>");
+        document.write("A idade de " + nome + " é " + idadeFlavio);
+
+</script> -->
+

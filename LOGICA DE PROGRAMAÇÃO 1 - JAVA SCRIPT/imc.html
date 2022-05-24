@@ -1,0 +1,120 @@
+<!-- Comando prompt-->
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+var nome = prompt("Informe seu nome.")
+var alturaInformada = prompt(nome + ", Informe sua altura.");
+var pesoInformado = prompt(nome + ", Informe seu peso.");
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+mostra("Olá " + nome + " o seu imc calculado é " + imc);
+
+     if (imc < 18.5) {
+        mostra("Você esta abaixo do recomendado.")
+     }
+
+     if (imc > 35) {
+        mostra("Você esta acima do recomendado.")
+     }
+
+     if (imc >= 18.5 && <= 35) {
+        /*if(imc <= 35) */{
+            mostra("Seu IMC esta excelente!")
+        }
+     }
+
+</script>
+
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc;
+
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+	function calculaImc(altura1, peso1, altura2, peso2) {
+
+    var imc1 = peso1 / (altura1 * altura1);
+    mostra("O imc calculado é " + imc);
+    var imc2= peso2 / (altura2 * altura2);
+
+}
+
+calculaImc(1.71, 73, 1.72, 68);
+</script>
+-->
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+    function calculoimc(altura, peso) {
+    	var imc =  peso / (altura * altura);
+
+    	mostra("O imc calculado é " + Math.round(imc))
+    }
+
+    //var peso = 78;
+    //var altura = 1.70;
+    calculoimc(1.70, 78);
+   // var imc =  peso / (altura * altura);//
+   // mostra("O imc é " + Math.round(imc) );   
+
+    //var peso2 = 80
+    //var altura2 = 1.90
+    calculoimc(1.90, 80);
+    //var imc =  peso2 / (altura2 * altura2) 
+   // mostra("O imc 2 é " + Math.round(imc) );
+
+
+
+</script>	
+
+-->
